@@ -346,19 +346,21 @@ section {
 }
 
 .team {
-  font-weight: 700;
-  font-size: 36px;
-  text-align: center;
-  line-height: calc(42 / 36);
-  letter-spacing: 0.03em;
   /* margin-bottom: 50px; */
   padding-top: 94px;
   color: var(--first-title-color);
   background-color: var(--background-color);
 }
+
 .team-header {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+
 .team-wrap {
   display: flex;
   justify-content: center;
@@ -439,7 +441,7 @@ section {
 
 .client-header {
   font-weight: 700;
-  font-size: 54px;
+  font-size: 36px;
   text-align: center;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
