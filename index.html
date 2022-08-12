@@ -454,6 +454,29 @@
           </ul>
         </div>
       </div>
+      <div class="footer-mailing">
+        <p class="footer-hed">Підпишіться на розсилку</p>
+        <form action="#" class="footer-form">
+          <div class="footer-field">
+            <label for="user-email" class="email-label"></label>
+            <input
+              type="email"
+              class="email-input"
+              name="user-name"
+              placeholder="E-mail"
+              required
+              title=""
+              id="email-label"
+            />
+            <span class="btn-send">
+              <button type="submit" class="footer-btn">Підписатися</button>
+              <svg class="" width="11" height="11">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </span>
+          </div>
+        </form>
+      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -528,17 +551,24 @@
           <div class="modal-field">
             <input
               type="checkbox"
-              class="modal-check"
+              class="modal-check visually-hidden"
               name="policy"
               id="policy"
               value="true"
             />
-            <label for="policy" class="check-txt"
-              >Погоджуюся з розсилкою та приймаю
+            <label for="policy" class="check-txt">
+              <span>
+                <svg class="check-icon" width="13" height="10">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю
               <a href="#" class="check-treaty">Умови договору</a></label
             >
           </div>
-          <button type="submit" class="modal-btn">Відправити</button>
+          <div class="btn-form">
+            <button type="submit" class="modal-btn">Відправити</button>
+          </div>
         </form>
       </div>
     </div>

@@ -599,6 +599,22 @@ section {
   fill: #ffffff;
 }
 
+.footer-mailing {
+  display: flex;
+  justify-content: center;
+  margin-left: 93px;
+}
+.footer-form{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.email-label{
+  width: 358px;
+  height: 50px;
+  background-color: #2F303A;
+;
+}
 /* ------modal---------- */
 .backdrop {
   position: fixed;
@@ -735,21 +751,46 @@ section {
   align-items: center;
 }
 
-.check-txt:before {
-  content: "";
+.check-txt span {
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
   margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check-icon {
+  fill: transparent;
 }
 
-.modal-check:checked + .check-txt:before {
+.modal-check:checked + .check-txt span {
   background-color: #2196f3;
   border: none;
-  border-image: url(../images/icon-check.svg);
+}
+
+.modal-check:checked + .check-txt .check-icon {
+  fill: #ffffff;
+}
+
+/* .check-txt:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 10px;
+} */
+
+/* .modal-check:checked + .check-txt:before { */
+  /* width: 12px;
+  height: 12px;
+  background-color: #2196f3;
+  border: none;
+  background-image: url(../images/icon-check.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 
 .check-treaty {
@@ -765,7 +806,6 @@ section {
 }
 
 .modal-btn {
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -784,7 +824,11 @@ section {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.btn-form{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #188ce8;
