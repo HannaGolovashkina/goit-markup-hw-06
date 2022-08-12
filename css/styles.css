@@ -558,6 +558,7 @@ section {
 .footer-cont:not(:last-child) {
   margin-right: 70px;
 }
+
 .footer-hed {
   font-weight: 700;
   font-size: 14px;
@@ -599,16 +600,25 @@ section {
   fill: #ffffff;
 }
 
-.footer-mailing {
-  display: flex;
-  justify-content: center;
+.footer-cont:last-child {
   margin-left: 93px;
 }
-.footer-form{
+
+.footer-form {
+  display: flex;
+  /* justify-content: space-between; */
+  /* gap: 10px; */
+}
+.footer-field{
   display: flex;
   justify-content: center;
-  gap: 10px;
+  /* gap: 12px; */
 }
+
+/* .footer-field:last-child{
+  gap: 12px;
+} */
+
 .footer-btn{
   display: flex;
   align-items: center;
@@ -625,7 +635,8 @@ section {
   box-sizing: border-box;
   color: var(--title-color);
   background: var(--axent-color);
-
+  margin-left: 12px;
+  
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -653,6 +664,8 @@ section {
 }
 
 input{
+  width: 358px;
+  height: 50px;
   font-family: 'Roboto' sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -664,13 +677,12 @@ input{
   padding: 4px;
   background-color: #2F303A;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 12px;
 }
-
+/* 
 .email-label{
-  width: 358px;
-  height: 50px;
   border: 1px #2F303A;
-}
+} */
 
 /* ------modal---------- */
 .backdrop {
