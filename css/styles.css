@@ -557,7 +557,7 @@ section {
 }
 
 .footer-cont:not(:last-child) {
-  margin-right: 70px;
+  margin-right: auto;
 }
 
 .footer-hed {
@@ -865,11 +865,12 @@ input {
   background-position: center; }*/
 
 .treaty {
+  display: flex;
+  justify-content: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-decoration: none;
   color: var(--axent-color);
 }
 
