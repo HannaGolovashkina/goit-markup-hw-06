@@ -854,6 +854,10 @@ input {
   fill: #ffffff;
 }
 
+.modal-check:focus + .check-txt span {
+  border-color: #2196f3;
+}
+
 /* .check-txt:before {
   content: "";
   width: 12px;
