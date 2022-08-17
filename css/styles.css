@@ -724,6 +724,12 @@ input {
   border-radius: 50%;
 }
 
+.modal-close:hover,
+.modal-close:focus {
+  background-color: currentColor;
+  border: 1px rgba(0, 0, 0, 0.1);
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -795,6 +801,7 @@ input {
   letter-spacing: 0.01em;
   display: block;
   color: #757575;
+  margin-bottom: 4px;
 }
 
 .modal-txt {
@@ -821,6 +828,7 @@ input {
   color: #757575;
   display: flex;
   align-items: center;
+  /* margin-top: 17px; */
 }
 
 .check-txt span {
@@ -872,6 +880,7 @@ input {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--axent-color);
+  padding-left: 5px;
 }
 
 .check-treaty {
@@ -880,7 +889,7 @@ input {
 }
 
 .modal-field:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .modal-btn {
@@ -1000,12 +1009,13 @@ input {
 }
 .img-portfolio {
   display: block;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.img-portfolio:hover .portfolio-hover-text {
+.img-portfolio:hover .portfolio-hover-text,
+.img-portfolio:focus .portfolio-hover-text {
   transform: translateY(0%);
 }
 
